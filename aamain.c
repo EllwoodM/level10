@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		char *nl = strchr(target, '\n');
 		if (nl) *nl = '\0';
 		
-		if (strcmp(target, "DONE") == 0) break;
+		if (strcmp(target, "done") == 0) break;
 		
 		char *found = substringSearchAA(target, lines, lineCount);
 		if (found)
